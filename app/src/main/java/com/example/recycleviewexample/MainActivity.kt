@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
     
     private fun onToggle(index: Int, isChecked: Boolean) {
         //list[index] = list[index].copy(isChecked = isChecked)
-        adapter.notifyDataSetChanged()
     }
     
     inner class MyAdapter(private var list: List<Item>) : RecyclerView.Adapter<MyViewHolder>() {
